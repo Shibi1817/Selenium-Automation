@@ -24,6 +24,8 @@ public class DeleteLead {
 		driver.findElement(By.linkText("Find Leads")).click();
 		driver.findElement(By.xpath("//input[@name='id']")).sendKeys("12955");
         	Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[text()='Find Leads']")).click();
+
 		driver.close();
 		
 		
